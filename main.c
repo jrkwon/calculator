@@ -11,19 +11,20 @@ int main(int argc, char* argv[])
   char operator;
 
   printf("Enter an expression: ");
-  scanf("%d %c %d", &a, &opertor, &b)
+  scanf("%d %c %d", &op1, &opertor, &op2)
   switch (opertor) {
     case '+':
-      c = add(a, b);
+      ans = add(op1, op2);
       break;
     case '-':
-      c = sub(a, b);
+      ans = sub(op1, op2);
       break;
     case '*':
-      c = mult(a, b);
+      ans = mult(op1, op2);
       break;
     case '/':
-      c = div(a, b);
+      ans = div(op1, op2);
       break;
   }
+  printf("Result is %d.\n", ans);
 }
