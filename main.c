@@ -26,5 +26,5 @@ int main(int argc, char* argv[])
       result = div(op1, op2);
       break;
   }
-  printf("Result is %d.\n", result);
+  printf("Result is %d.\n", result); 
 }
